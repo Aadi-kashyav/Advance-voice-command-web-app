@@ -1,7 +1,7 @@
 x = 0;
 y = 0;
 i=0;
-draw_apple = "";
+draw_apple = " ";
 screen_width = 0;
 screen_height = 0;
 apple = "apple.png";
@@ -11,6 +11,10 @@ to_number = "";
 var SpeechRecognition = window.webkitSpeechRecognition;
   
 var recognition = new SpeechRecognition();
+
+function preload(){
+  apple = loadImage("apple.png");
+}
 
 function start()
 {
